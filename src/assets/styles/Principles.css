@@ -1,0 +1,23 @@
+.principles {
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.principles p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.principles span {
+  color: darkcyan;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .principles {
+    padding-top: 20px;
+  }
+}

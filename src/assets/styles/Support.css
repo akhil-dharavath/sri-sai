@@ -1,0 +1,29 @@
+.support {
+  padding-top: 40px;
+}
+
+.technical,
+.non-technical,
+.support h2 {
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.support p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  /* margin-bottom: 0px; */
+}
+
+.support p b,
+.technical p .css-13t1aj4-MuiSvgIcon-root,
+.non-technical p .css-i4bv87-MuiSvgIcon-root {
+  color: darkcyan;
+}
+
+@media (max-width: 768px) {
+  .support {
+    padding-top: 20px;
+  }
+}

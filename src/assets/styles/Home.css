@@ -1,0 +1,274 @@
+.home {
+  min-height: 100vh;
+  /* max-width: 920px;
+  margin: auto; */
+}
+
+.home .video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home .video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home .video::before {
+  content: "";
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.home .text_animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  flex-direction: column;
+}
+
+.home .left-text,
+.home .right-text {
+  transition: all 2s ease-in-out;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+  text-shadow: 3px 3px black;
+  font-weight: 500;
+}
+
+.home .commitment {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .commitment > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .commitment div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .commitment div div p {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.home .specialists div div div {
+  padding-left: 20px;
+}
+
+.home .commitment img {
+  height: 200px;
+  margin-right: 50px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.home .specialists div div div {
+  padding-left: 20px;
+}
+
+.home .specialists img {
+  margin-left: 50px;
+  margin-right: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.home .specialists .css-i4bv87-MuiSvgIcon-root {
+  color: darkcyan;
+}
+
+.latest_projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.home .latest_projects div {
+  width: 25%;
+  border: 1px solid gray;
+  padding: 0px 20px;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 2px 2px 4px gray;
+  min-width: 300px;
+  transition: all 0.4s;
+}
+
+.home .latest_projects div:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 2px gray;
+}
+
+.home .latest_projects div img {
+  width: 75%;
+  margin: auto;
+  max-width: 250px;
+  display: block;
+}
+
+.home .latest_projects div h5 {
+  color: #007bff;
+}
+
+.home .latest_projects div p {
+  margin-bottom: 5px;
+}
+
+.carousel {
+  margin-top: 75px !important;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+}
+
+.carouselImage {
+  width: 850px;
+  height: 550px;
+}
+
+.carousel.pointer-event {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.css-1321ahv-MuiSvgIcon-root{
+  height: auto !important;
+  width: auto !important;
+}
+
+@media (max-width: 1000px) {
+  .home .video::before {
+    font-size: 30px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .home .left-text,
+  .home .right-text {
+    font-size: 35px;
+  }
+  .home .commitment img {
+    height: 175px;
+    margin-right: 25px;
+  }
+  .home .specialists img {
+    margin-left: 15px;
+    height: auto;
+    width: 250px;
+  }
+  .home .latest_projects div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel {
+    margin-top: 50px !important;
+    height: auto;
+    width: 90%;
+    max-width: 750px;
+    max-height: 500px;
+  }
+  .carouselImage {
+    height: auto;
+    width: 90%;
+    margin: auto;
+    max-width: 750px;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .specialists img {
+    display: none;
+  }
+  .home .commitment img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    width: 100%;
+  }
+  .home .video::before {
+    font-size: 20px;
+    padding: 0px 30px;
+  }
+  .home .text_animation {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .left-text,
+  .home .right-text {
+    font-size: 25px;
+  }
+  .home .commitment img {
+    display: none;
+  }
+  .home .commitment div div {
+    padding: 10px;
+  }
+  .home .commitment div div b {
+    color: orange;
+  }
+  .home .specialists div {
+    padding: 0px;
+  }
+  .home .specialists div div p {
+    margin-bottom: 0px !important;
+  }
+  .home .specialists div div div {
+    padding: 0px;
+    padding-left: 10px;
+  }
+  .carousel {
+    margin-top: 30px !important;
+    width: 95%;
+  }
+  .carouselImage {
+    width: 95%;
+  }
+}

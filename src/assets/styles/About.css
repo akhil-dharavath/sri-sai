@@ -1,0 +1,118 @@
+.about-us {
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-us p .css-i4bv87-MuiSvgIcon-root {
+  color: darkcyan;
+}
+
+.aboutcard {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 30px 15px;
+  box-shadow: 2px 2px 4px darkgray;
+  position: relative;
+  z-index: 2;
+  transition: 0.3s all;
+}
+
+.aboutcard:hover {
+  transform: scale(1.007);
+  box-shadow: 1px 1px 2px darkgray;
+}
+
+.aboutcard .profile {
+  width: 30%;
+  text-align: center;
+}
+
+.aboutcard .content {
+  width: 70%;
+}
+
+.aboutcard p {
+  /* font-size: 20px; */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.aboutcard img {
+  /* style={{ width: 100, borderRadius: "50%" }}  */
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 2px;
+}
+
+.aboutcard h4 {
+  color: #007bff;
+}
+.aboutcard h5 {
+  color: #ff6b6b;
+}
+
+.aboutcard img {
+  /* style={{ width: 100, borderRadius: "50%" }}  */
+  width: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+  .aboutcard {
+    padding: 10px;
+  }
+  .aboutcard {
+    flex-direction: column;
+  }
+  .aboutcard .profile {
+    width: 100%;
+  }
+  .aboutcard .content {
+    width: 95%;
+  }
+  .aboutcard h4 {
+    font-size: 25px;
+  }
+  .aboutcard h5 {
+    font-size: 20px;
+  }
+  .aboutcard img {
+    width: 150px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us{
+    padding-top: 20px;
+  }
+  .aboutcard {
+    width: 100%;
+  }
+  .aboutcard h4 {
+    font-size: 22px !important;
+  }
+  .aboutcard h5 {
+    font-size: 18px !important;
+  }
+  .aboutcard p {
+    font-size: 18px;
+  }
+  .aboutcard img {
+    width: 100px !important;
+  }
+}
