@@ -24,21 +24,21 @@
 }
 
 /* Navigation */
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-hyum1k-MuiToolbar-root {
+nav .MuiTypography-root , nav .MuiToolbar-root{
   background: white;
   height: 100px;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-p7bec2-MuiTypography-root img {
+nav .MuiTypography-root img {
   height: 100px;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-i4bv87-MuiSvgIcon-root {
+nav .css-i4bv87-MuiSvgIcon-root {
   color: black;
   font-size: 30px;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-130f8nx a {
+nav .MuiBox-root a {
   text-transform: capitalize;
   color: black;
   font-size: 1.05rem;
@@ -49,11 +49,11 @@
   min-width: auto;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-130f8nx .active {
+nav .MuiBox-root .active {
   color: darkcyan;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-130f8nx .active::after {
+nav .MuiBox-root .active::after {
   position: absolute;
   height: 2px;
   width: 100%;
@@ -96,11 +96,11 @@
 }
 
 @media (max-width: 1000px) {
-  .css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-130f8nx a {
+  nav .MuiBox-root a {
     font-size: 0.9rem;
   }
-  .css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-hyum1k-MuiToolbar-root{
-    padding: 0px;
+  nav .MuiToolbar-root{
+    padding: 0px 5px;
   }
   .second-footer{
     flex-direction: column;
@@ -113,7 +113,7 @@
 }
 
 @media (max-width: 600px) {
-  .css-11b3ww9-MuiPaper-root-MuiAppBar-root .css-hyum1k-MuiToolbar-root {
+  nav.MuiToolbar-root {
     background: white;
     height: 70px;
   }
