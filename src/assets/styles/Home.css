@@ -108,7 +108,7 @@
   height: auto;
 }
 
-.home .specialists .css-i4bv87-MuiSvgIcon-root {
+.home .specialists .MuiSvgIcon-root {
   color: darkcyan;
 }
 
@@ -174,7 +174,8 @@
   right: 10px;
 }
 
-.css-1321ahv-MuiSvgIcon-root{
+.carousel-control-next .MuiSvgIcon-root,
+.carousel-control-prev .MuiSvgIcon-root {
   height: auto !important;
   width: auto !important;
 }
@@ -227,6 +228,10 @@
   .home .commitment img {
     display: none;
   }
+  .home .commitment div div p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 576px) {
@@ -249,10 +254,7 @@
     display: none;
   }
   .home .commitment div div {
-    padding: 10px;
-  }
-  .home .commitment div div b {
-    color: orange;
+    padding: 5px;
   }
   .home .specialists div {
     padding: 0px;

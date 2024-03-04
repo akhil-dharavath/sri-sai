@@ -7,6 +7,7 @@ import '../assets/styles/About.css'
 const AboutPage = () => {
   useEffect(() => {
     document.title = 'About - Sri Sai Engineering & Technical Services';
+    window.scrollTo(0,0);
   }, []);
 
   return (

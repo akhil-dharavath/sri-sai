@@ -116,11 +116,13 @@ function Navigation(props) {
                 width: "100%",
               }}
             >
-              <img
-                src={require("../assets/company_images/logo.jpeg")}
-                alt="logo"
-                height={70}
-              />
+              <Link to="/">
+                <img
+                  src={require("../assets/company_images/logo.jpeg")}
+                  alt="logo"
+                  height={70}
+                />
+              </Link>
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
@@ -138,10 +140,12 @@ function Navigation(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <img
-              src={require("../assets/company_images/logo.jpeg")}
-              alt="logo"
-            />
+            <Link to="/">
+              <img
+                src={require("../assets/company_images/logo.jpeg")}
+                alt="logo"
+              />
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

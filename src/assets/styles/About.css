@@ -5,12 +5,14 @@
   padding-top: 40px;
 }
 
-.about-us p {
+.about-us p,
+.aboutcard p {
   font-size: 1.1rem;
   line-height: 1.6;
+  font-weight: 300;
 }
 
-.about-us p .css-i4bv87-MuiSvgIcon-root {
+.about-us p .MuiSvgIcon-root {
   color: darkcyan;
 }
 
@@ -43,12 +45,6 @@
 
 .aboutcard .content {
   width: 70%;
-}
-
-.aboutcard p {
-  /* font-size: 20px; */
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 .aboutcard img {
@@ -96,8 +92,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-us p,
+  .aboutcard p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
 @media (max-width: 576px) {
-  .about-us{
+  .about-us {
     padding-top: 20px;
   }
   .aboutcard {
@@ -108,9 +112,6 @@
   }
   .aboutcard h5 {
     font-size: 18px !important;
-  }
-  .aboutcard p {
-    font-size: 18px;
   }
   .aboutcard img {
     width: 100px !important;

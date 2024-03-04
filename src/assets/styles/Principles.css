@@ -8,6 +8,7 @@
 .principles p {
   font-size: 1.1rem;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .principles span {
@@ -19,5 +20,9 @@
 @media (max-width: 768px) {
   .principles {
     padding-top: 20px;
+  }
+  .principles p {
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }

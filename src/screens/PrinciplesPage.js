@@ -6,6 +6,7 @@ import "../assets/styles/Principles.css";
 const PrinciplesPage = () => {
   useEffect(() => {
     document.title = "Principles - Sri Sai Engineering & Technical Services";
+    window.scrollTo(0,0);
   }, []);
 
   return (

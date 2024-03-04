@@ -6,6 +6,7 @@ import '../assets/styles/OurEquipments.css'
 const OurEquipmentsPage = () => {
   useEffect(() => {
     document.title = 'Our Equipments - Sri Sai Engineering & Technical Services';
+    window.scrollTo(0,0);
   }, []);
 
   return (

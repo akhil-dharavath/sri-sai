@@ -5,7 +5,8 @@ import "../assets/styles/Support.css";
 
 const SupportPage = () => {
   useEffect(() => {
-    document.title = "Technical - Sri Sai Engineering & Technical Services";
+    document.title = "Support - Sri Sai Engineering & Technical Services";
+    window.scrollTo(0,0);
   }, []);
 
   return (

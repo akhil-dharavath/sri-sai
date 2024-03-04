@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 const ProjectsPage = () => {
   useEffect(() => {
     document.title = 'Projects - Sri Sai Engineering & Technical Services';
+    window.scrollTo(0,0);
   }, []);
 
   return (

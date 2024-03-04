@@ -8,13 +8,14 @@ import "../assets/styles/Home.css";
 const Home = () => {
   useEffect(() => {
     document.title = "Home - Sri Sai Engineering & Technical Services";
+    window.scrollTo(0,0);
   }, []);
 
   return (
     <div className="home">
       <div className="video">
-        {/* <video muted autoPlay loop poster={require('../assets/images/homePic.png')}> */}
-        <video muted poster={require("../assets/images/homePic.png")}>
+        <video muted autoPlay loop poster={require('../assets/images/homePic.png')}>
+        {/* <video muted poster={require("../assets/images/homePic.png")}> */}
           <source
             src={require("../assets/company_images/home.mp4")}
             type="video/mp4"
