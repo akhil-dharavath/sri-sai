@@ -1,0 +1,21 @@
+.pageNotFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.pageNotFound h2 {
+  color: darkcyan;
+}
+
+.pageNotFound p {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .pageNotFound p {
+    font-size: 1rem;
+  }
+}
