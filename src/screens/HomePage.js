@@ -5,17 +5,74 @@ import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import "../assets/styles/Home.css";
 
+const clients = [
+  {
+    logo: require("../assets/clients/VRKP.webp"),
+    name: "VRKP SPONGE & POWER PLANT LLP",
+    projects: ["2 X 350 TPD Sponge iron Civil work", "25 MW Power Plant"],
+    year: "2023 – Present",
+    workOrderValue: "12.5 Cr",
+  },
+  {
+    logo: require("../assets/clients/smiore.png"),
+    name: "SMIORE MANGANESE & ORES LTD",
+    projects: [
+      "380 m³ Blast Furnace civil work",
+      "Railway Under Bridge civil work",
+    ],
+    year: "2023 – 2024",
+    workOrderValue: "25.7 Cr",
+  },
+  {
+    logo: require("../assets/clients/jai_raj.jpeg"),
+    name: "JAI RAJ ISPAT LIMITED",
+    projects: [
+      "0.4 M T Rolling Mill civil work",
+      "75 sqm Sinter plant civil work",
+    ],
+    year: "2019 – Present",
+    workOrderValue: "75 Cr",
+  },
+  {
+    logo: require("../assets/clients/sks.png"),
+    name: "SKS STEELS TRIVISTA STEEL AND POWER PLANT PVT LTD",
+    projects: [
+      "2 x 100 TPD Sponge iron Unit",
+      "1 x 150 TPD Sponge iron Unit",
+      "Rolling mill & Furnace work",
+    ],
+    year: "2016 – 2018",
+    workOrderValue: "17.5 Cr",
+  },
+  {
+    logo: require("../assets/clients/mukand.png"),
+    name: "MUKAND SUMI SPECIAL STEEL LTD",
+    projects: [
+      "0.6 M T rolling mill Accessories",
+      "Water complex, Raw Water reservoir, 200 KVA Substation",
+    ],
+    year: "2013 – Present",
+    workOrderValue: "12.5 Cr",
+    consultancy: "Korus Delhi",
+  },
+];
+
 const Home = () => {
   useEffect(() => {
     document.title = "Home - Sri Sai Engineering & Technical Services";
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="home">
       <div className="video">
-        <video muted autoPlay loop poster={require('../assets/images/homePic.png')}>
-        {/* <video muted poster={require("../assets/images/homePic.png")}> */}
+        <video
+          muted
+          autoPlay
+          loop
+          poster={require("../assets/images/homePic.png")}
+        >
+          {/* <video muted poster={require("../assets/images/homePic.png")}> */}
           <source
             src={require("../assets/company_images/home.mp4")}
             type="video/mp4"
@@ -122,83 +179,26 @@ const Home = () => {
       {/* Latest Projects */}
       <h2 className="text-center pt-3">Latest projects</h2>
       <div className="latest_projects">
-        <div>
-          <img src={require("../assets/clients/VRKP.webp")} alt="vrkp" />
-          <h5>VRKP SPONGE & POWER PLANT LLP</h5>
-          <p>❖ 2 X 350 TPD Sponge iron Civil work</p>
-          <p>❖ 25 MW Power Plant</p>
-          <p>
-            <b>Year:</b> 2023 – Present
-          </p>
-          <p>
-            <b>Work Order Value:</b> 12.5 Cr
-          </p>
-        </div>
-        <div>
-          <img src={require("../assets/clients/smiore.png")} alt="smiore" />
-          <h5>SMIORE MANGANESE & ORES LTD</h5>
-          <p>
-            ❖ 380 m<sup>3</sup> Blast Furnace civil work
-          </p>
-          <p>❖ Railway Under Bridge civil work</p>
-          <p>
-            <b>Year:</b> 2023 – 2024
-          </p>
-          <p>
-            <b>Work Order Value:</b> 25.7 Cr
-          </p>
-        </div>
-        <div>
-          <img src={require("../assets/clients/jai_raj.jpeg")} alt="jai_raj" />
-          <h5>JAI RAJ ISPAT LIMITED</h5>
-          <p>❖ 0.4 M T Rolling Mill civil work</p>
-          <p>❖ 75 sqm Sinter plant civil work</p>
-          <p>
-            <b>Year:</b> 2019 – Present
-          </p>
-          <p>
-            <b>Work Order Value:</b> 75 Cr
-          </p>
-        </div>
-        <div>
-          <img src={require("../assets/clients/sks.png")} alt="sks" />
-          <h5>SKS STEELS TRIVISTA STEEL AND POWER PLANT PVT LTD </h5>
-          <p>❖ 2 x 100 TPD Sponge iron Unit</p>
-          <p>❖ 1 x 150 TPD Sponge iron Unit</p>
-          <p>❖ Rolling mill & Furnace work</p>
-          <p>
-            <b>Year:</b> 2016 – 2018
-          </p>
-          <p>
-            <b>Work Order Value:</b> 17.5 C
-          </p>
-        </div>
-        <div>
-          <img src={require("../assets/clients/mukand.png")} alt="mukand" />
-          <h5>MUKAND SUMI SPECIAL STEEL LTD</h5>
-          <p>❖ 0.6 M T rolling mill Accessories</p>
-          <p>❖ Water complex, Raw Water reservoir, 200 KVA Substation.</p>
-          <p>
-            <b>Year:</b> 2013 – Present
-          </p>
-          <p>
-            <b>Work Order Value:</b> 12.5 Cr
-          </p>
-          <p>
-            <b>Consultancy:</b> Korus Delhi
-          </p>
-        </div>
-        {/* <div>
-          <img
-            src={require("../assets/company_logos/jai_raj.jpeg")}
-            alt="jai_raj"
-          />
-          <h5>JAI RAJ ISPAT LIMITED</h5>
-          <p>0.4 M T Rolling Mill civil work</p>
-          <p>75 sqm Sinter plant civil work</p>
-          <p>Year: 2019 – Present</p>
-          <p>Work Order Value: 75 Cr</p>
-        </div> */}
+        {clients.map((client, index) => (
+          <div key={index} className="client-info-card">
+            <img src={client.logo} alt={client.name} />
+            <h5>{client.name}</h5>
+            {client.projects.map((project, index) => (
+              <p key={index}>❖ {project}</p>
+            ))}
+            <p>
+              <b>Year:</b> {client.year}
+            </p>
+            <p>
+              <b>Work Order Value:</b> {client.workOrderValue}
+            </p>
+            {client.consultancy && (
+              <p>
+                <b>Consultancy:</b> {client.consultancy}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
 
       <Carousel />
