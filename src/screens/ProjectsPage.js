@@ -469,7 +469,7 @@ const ProjectsPage = () => {
             "Post",
             "Dist",
             "Consultancy",
-            "Name of MD",
+            // "Name of MD",
             "Year",
             "Work Order Value",
           ]}
@@ -492,7 +492,7 @@ const ProjectsPage = () => {
             "Dist",
             "Managing Director",
             "Consultancy",
-            "Name of MD",
+            // "Name of MD",
             "Year",
             "Work Order Value",
           ]}
@@ -525,7 +525,7 @@ const ProjectsPage = () => {
           direction="left"
           img={require("../assets/clients/grace.png")}
           name="GRACE INDUSTRIES LTD"
-          titles={["Consultancy", "Name of MD", "Year", "Work Order Value"]}
+          titles={["Consultancy", "Year", "Work Order Value"]}
           values={["Popuri(Hyderabad)", "2001-2002", "4.5 Cr"]}
           desc={["Chandrapur (Maharashtra)", "2x100 TPD", "Sponge Iron Unit"]}
         />

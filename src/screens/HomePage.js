@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import SwipeRightAltIcon from "@mui/icons-material/SwipeRightAlt";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import "../assets/styles/Home.css";
+import Carousel2 from "../components/Carousel2";
 
 const clients = [
   {
@@ -44,16 +45,35 @@ const clients = [
     year: "2016 – 2018",
     workOrderValue: "17.5 Cr",
   },
+  // {
+  //   logo: require("../assets/clients/mukand.png"),
+  //   name: "MUKAND SUMI SPECIAL STEEL LTD",
+  //   projects: [
+  //     "0.6 M T rolling mill Accessories",
+  //     "Water complex, Raw Water reservoir, 200 KVA Substation",
+  //   ],
+  //   year: "2013 – Present",
+  //   workOrderValue: "12.5 Cr",
+  //   consultancy: "Korus Delhi",
+  // },
   {
-    logo: require("../assets/clients/mukand.png"),
-    name: "MUKAND SUMI SPECIAL STEEL LTD",
-    projects: [
-      "0.6 M T rolling mill Accessories",
-      "Water complex, Raw Water reservoir, 200 KVA Substation",
-    ],
-    year: "2013 – Present",
-    workOrderValue: "12.5 Cr",
-    consultancy: "Korus Delhi",
+    logo: require("../assets/clients/a1-steel.png"),
+    name: "A1 STEEL PVT LTD BELLARY",
+    projects: ["GA Pipeline Mill & 30 MT Induction Furnace x2"],
+    year: "2023 - 2024",
+    workOrderValue: "10 Cr",
+    rccQuantity: "11000 CUM",
+  },
+  {
+    logo: require("../assets/clients/pushpit.jpeg"),
+    name: "PUSHPIT STEELS PVT LTD",
+    projects: ["2x350 TPD Sponge Iron", "30 MW Power Plant"],
+    year: "2023 - 2024",
+    workOrderValue: "10 Cr",
+    rccSpongeQuantity: "12000 CUM",
+    rccPowerQuantity: "8000 CUM",
+    workOrderValueSponge: "11.5Cr",
+    workOrderValuePower: "9.2 Cr",
   },
 ];
 
@@ -197,11 +217,39 @@ const Home = () => {
                 <b>Consultancy:</b> {client.consultancy}
               </p>
             )}
+            {client.rccQuantity && (
+              <p>
+                <b>Total RCC Quantity:</b> {client.rccQuantity}
+              </p>
+            )}
+            {client.rccSpongeQuantity && (
+              <p>
+                <b>RCC Quantity for Sponge Iron:</b> {client.rccSpongeQuantity}
+              </p>
+            )}
+            {client.rccPowerQuantity && (
+              <p>
+                <b>RCC Quantity for Power plant:</b> {client.rccPowerQuantity}
+              </p>
+            )}
+            {client.workOrderValueSponge && (
+              <p>
+                <b>Work Order Value of Sponge Iron:</b>{" "}
+                {client.workOrderValueSponge}
+              </p>
+            )}
+            {client.workOrderValuePower && (
+              <p>
+                <b>Work Order Value of Power Plant:</b>{" "}
+                {client.workOrderValuePower}
+              </p>
+            )}
           </div>
         ))}
       </div>
 
       <Carousel />
+      <Carousel2 />
       <Footer />
     </div>
   );
