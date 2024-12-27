@@ -135,10 +135,14 @@
 }
 
 .home .latest_projects div img {
-  width: 75%;
+  /* width: 75%;
+  margin: auto;
+  max-width: 250px;
+  display: block; */
   margin: auto;
   max-width: 250px;
   display: block;
+  height: 200px;
 }
 
 .home .latest_projects div h5 {
