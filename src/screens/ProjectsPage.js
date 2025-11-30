@@ -15,6 +15,14 @@ const ProjectsPage = () => {
         {/* <h2>PROJECTS</h2> */}
         <ProjectCard
           direction="right"
+          img={require("../assets/clients/MSPL_logo.svg.png")}
+          name="MSPL Limited"
+          titles={["Year", ]}
+          values={["2023 – 2024", ]}
+          desc={[" Baldota Group of Companies ,Hosapete", "1MT Pelletizing Plant"]}
+        />
+        <ProjectCard
+          direction="right"
           img={require("../assets/clients/VRKP.webp")}
           name="VRKP SPONGE & POWER PLANT LLP"
           titles={["Year", "Work Order Value"]}
@@ -307,7 +315,10 @@ const ProjectsPage = () => {
           name="KMMI STEEL PVT LTD"
           titles={["Consultancy", "Year", "Work Order Value"]}
           values={["HIQ,Chennai", "2008-2009", "5.5 Cr"]}
-          desc={["10MW Power Plant"]}
+          desc={[
+            "10MW Power Plant",
+            "0.5MT Pelletizing Plant",
+          ]}
         />
         <ProjectCard
           direction="right"
@@ -381,6 +392,7 @@ const ProjectsPage = () => {
           desc={[
             "Hospet, Bellary Dist",
             "500 TPD x 2 Sponge Iron",
+            "1MT Pelletizing Plant",
             "Rolling Mill 1 M ton capacity (Bar bundling Mill, ECR 1, 2, 3 bldgs, Finishing Mill, Pump house)",
             ".5 Mtrs Hum Pipe-Line laying for drainage system",
           ]}
