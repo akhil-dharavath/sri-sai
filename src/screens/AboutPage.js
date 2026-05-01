@@ -17,12 +17,12 @@ const managementTeam = [
     position: "Managing Director",
     content: "As a founding member of S.S.E.T.Service, Narayana plays the role of the principal contractor. With over 20 years of experience in handling civil projects. Through his recognition of market opportunities and desire to build a reputable and suitable contracting business. Narayana has been able to develop the company into a major player in the local contracting industry."
   },
-  {
-    src: require("../assets/images/unknown.jpeg"),
-    name: "Prasenjit Singh Deo",
-    position: "Director",
-    content: "Having fifteen years experience in the position of contracting division manager. He has experience in managing numerous sizeable and complex civil engineering. In 2006 he accepted the position of construction manager at S.S.E.T.Services. He estimates and tenders contract work. Prasenjit has the responsibility for ensuring the overall success of our contract works."
-  },
+  // {
+  //   src: require("../assets/images/unknown.jpeg"),
+  //   name: "Prasenjit Singh Deo",
+  //   position: "Director",
+  //   content: "Having fifteen years experience in the position of contracting division manager. He has experience in managing numerous sizeable and complex civil engineering. In 2006 he accepted the position of construction manager at S.S.E.T.Services. He estimates and tenders contract work. Prasenjit has the responsibility for ensuring the overall success of our contract works."
+  // },
   {
     src: require("../assets/images/unknown.jpeg"),
     name: "T Sri Lakshmi",
