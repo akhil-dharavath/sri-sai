@@ -549,6 +549,19 @@ const ProjectsPage = () => {
           values={["POPURI (Hyderabad)", "2000-2001", "5 Cr"]}
           desc={["Raipur (C.G.)", "2x100 TPD", "Sponge Iron Unit"]}
         />
+        <ProjectCard
+          direction="left"
+          // img={require("../assets/clients/raam_tyres.png")}
+          name="RAAM TYRES - INDUSTRIAL FACTORY CONSTRUCTION"
+          titles={["Year", "Work Order Value"]}
+          values={["1990-1992", "9.50 Cr"]}
+          desc={[
+            "Construction of RMP Building",
+            "Main Factory Building Civil Works",
+            "DG Rooms and Compressor Rooms",
+            "Administrative Office Building",
+          ]}
+        />
       </div>
       <Footer />
     </div>
